@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home_black"
+            android:title="@string/menu_home" />
+        <item
+            android:id="@+id/nav_rents"
+            android:icon="@drawable/ic_local_parking_black"
+            android:title="@string/menu_rent" />
+        <item
+            android:id="@+id/nav_on_sale"
+            android:icon="@drawable/ic_attach_money_black"
+            android:title="@string/menu_purchase" />
+    </group>
+
+    <item android:title="@string/your_scrounge_menu">
+        <menu>
+            <item
+                android:id="@+id/nav_your_scrounge"
+                android:icon="@drawable/ic_weight_hanging_solid"
+                android:title="@string/your_scrounge_menu" />
+        </menu>
+    </item>
+
+    <item android:title="@string/explorer_menu">
+        <menu>
+            <item
+                android:id="@+id/nav_explorer"
+                android:icon="@drawable/ic_tachometer_alt_solid"
+                android:title="@string/explorer_menu" />
+        </menu>
+    </item>
+
+    <item android:title="@string/info_menu">
+        <menu>
+            <item
+                android:id="@+id/nav_about"
+                android:icon="@drawable/ic_info_circle_solid"
+                android:title="@string/menu_about" />
+        </menu>
+    </item>
+
+</menu>

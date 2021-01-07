@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="it.scroking.autoscroc.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_rents"
+        android:name="it.scroking.autoscroc.ui.on_rent.OnRentFragment"
+        android:label="@string/menu_rent"
+        tools:layout="@layout/fragment_rents" >
+        <action
+            android:id="@+id/action_nav_rents_to_nav_rent"
+            app:destination="@id/nav_rent" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_rent"
+        android:name="it.scroking.autoscroc.ui.offer_detail.OfferDetailFragment"
+        android:label="@string/menu_offer"
+        tools:layout="@layout/fragment_offer" >
+        <action
+            android:id="@+id/action_nav_rent_to_nav_car_detail"
+            app:destination="@id/nav_car_detail" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_on_sale"
+        android:name="it.scroking.autoscroc.ui.on_sale.OnSaleFragment"
+        android:label="@string/menu_purchase"
+        tools:layout="@layout/fragment_on_sale" >
+        <action
+            android:id="@+id/action_nav_on_sale_to_nav_rent"
+            app:destination="@id/nav_rent" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_new_offer"
+        android:name="it.scroking.autoscroc.ui.new_offer.NewOfferFragment"
+        android:label="@string/menu_bot"
+        tools:layout="@layout/fragment_add_offer" />
+
+    <fragment
+        android:id="@+id/nav_your_scrounge"
+        android:name="it.scroking.autoscroc.ui.your_scrounge.YourScroungeFragment"
+        android:label="@string/your_scrounge_menu"
+        tools:layout="@layout/fragment_your_scrounge" />
+
+    <fragment
+        android:id="@+id/nav_explorer"
+        android:name="it.scroking.autoscroc.ui.explorer.BrandsFragment"
+        android:label="@string/explorer_menu"
+        tools:layout="@layout/fragment_explorer">
+        <action
+            android:id="@+id/action_nav_explorer_to_nav_models"
+            app:destination="@id/nav_models" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_models"
+        android:name="it.scroking.autoscroc.ui.explorer.ModelsFragment"
+        android:label="@string/explorer_menu"
+        tools:layout="@layout/fragment_explorer">
+        <action
+            android:id="@+id/action_nav_models_to_nav_cars"
+            app:destination="@id/nav_cars" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_cars"
+        android:name="it.scroking.autoscroc.ui.explorer.CarsFragment"
+        android:label="@string/explorer_menu"
+        tools:layout="@layout/fragment_cars">
+        <action
+            android:id="@+id/action_nav_cars_to_carDetailFragment"
+            app:destination="@id/nav_car_detail" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_car_detail"
+        android:name="it.scroking.autoscroc.ui.explorer.CarDetailFragment"
+        android:label="@string/explorer_menu"
+        tools:layout="@layout/fragment_car_detail" />
+
+    <fragment
+        android:id="@+id/nav_about"
+        android:name="it.scroking.autoscroc.ui.about.AboutFragment"
+        android:label="@string/menu_about"
+        tools:layout="@layout/fragment_about" />
+
+    <fragment
+        android:id="@+id/nav_login"
+        android:name="it.scroking.autoscroc.ui.login.LoginFragment"
+        android:label="@string/menu_login"
+        tools:layout="@layout/fragment_login" />
+
+    <fragment
+        android:id="@+id/nav_register"
+        android:name="it.scroking.autoscroc.ui.register.RegisterFragment"
+        android:label="@string/menu_register"
+        tools:layout="@layout/fragment_register" />
+
+    <fragment
+        android:id="@+id/nav_my_profile"
+        android:name="it.scroking.autoscroc.ui.myprofile.MyProfileFragment"
+        android:label="@string/menu_my_profile"
+        tools:layout="@layout/fragment_register" />
+
+
+</navigation>

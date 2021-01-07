@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/addRentLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/typeOffer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="TextView" />
+
+            <RadioGroup
+                android:id="@+id/rentRadioGroup"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RadioButton
+                    android:id="@+id/rentRadio"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:text="@string/rent_txt" />
+
+                <RadioButton
+                    android:id="@+id/salesRadio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/sale_text" />
+
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/carBrand"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/brand_string" />
+
+            <Spinner
+                android:id="@+id/brandSpinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp" />
+
+            <TextView
+                android:id="@+id/CarModel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/car_model" />
+
+            <Spinner
+                android:id="@+id/modelSpinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp" />
+
+            <TextView
+                android:id="@+id/carEmngine"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/car_engine" />
+
+            <Spinner
+                android:id="@+id/mengineSpinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/carLicencePlate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/licensePlate_text"
+                android:text="@string/licensePlate_text" />
+
+            <EditText
+                android:id="@+id/licencePlateInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName" />
+
+            <TextView
+                android:id="@+id/carYear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/year_immatriculation_rent" />
+
+            <NumberPicker
+                android:id="@+id/yearCarPicker"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp" />
+            <TextView
+                android:id="@+id/rentKm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:text="@string/km_car_rent" />
+
+            <EditText
+                android:id="@+id/km"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="@string/km_placeholder"
+                android:inputType="numberSigned" />
+
+            <TextView
+                android:id="@+id/rentPrice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/rent_price" />
+
+            <EditText
+                android:id="@+id/priceInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="@string/price_car"
+                android:inputType="numberSigned" />
+
+            <Button
+                android:id="@+id/addButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/add_rent_button" />
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
